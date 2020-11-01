@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { Text, View, Image } from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>hi!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class Myname extends Component {
+  render() {
+    return <Text>Jennie</Text>;
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Myname />
+        <Image
+          source={{
+            uri:
+              "https://img.wkorea.com/w/2020/01/style_5e1eaaa00c2a6-539x700.jpg",
+          }}
+          style={{ width: 300, height: 300 }}
+        />
+        <Image
+          source={require("./jennie.jfif")}
+          style={{ width: 300, height: 300 }}
+        />
+      </View>
+    );
+  }
+}
