@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
+import Jen from "./Jennie";
 
 class Myname extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <View>
+        <Jen />
         <Myname />
         <Image
           source={{
