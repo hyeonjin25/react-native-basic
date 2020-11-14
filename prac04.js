@@ -3,6 +3,8 @@ import { Text, View, Button } from "react-native";
 import Axios from "axios";
 import MovieCard from "./MovieCard";
 
+//영화 목록 만들기
+
 export class ApiTest extends Component {
   constructor(props) {
     super(props);
